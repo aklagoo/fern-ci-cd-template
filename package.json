@@ -1,0 +1,31 @@
+{
+  "name": "fern-ci-cd-template",
+  "version": "1.0.0",
+  "description": "Base template for a FERN + CI/CD application",
+  "main": "index.js",
+  "scripts": {
+    "test:backend": "cd backend & npm test",
+    "test:frontend": "cd frontend & npm test",
+    "test:frontend-ci": "cd frontend & npm run test-ci",
+    "test": "concurrently \"npm:test:backend\" \"npm:test:frontend-ci\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aklagoo/fern-ci-cd-template.git"
+  },
+  "keywords": [
+    "react.js",
+    "node.js",
+    "jest"
+  ],
+  "author": "Archan Lagoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aklagoo/fern-ci-cd-template/issues"
+  },
+  "homepage": "https://github.com/aklagoo/fern-ci-cd-template#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
