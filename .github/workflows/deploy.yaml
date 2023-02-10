@@ -1,5 +1,5 @@
 name: deploy
-run-name: ${{ github.actor }} is deploying frontend from branch {{ github.ref_name }}.
+run-name: ${{ github.actor }} is deploying frontend from branch ${{ github.ref_name }}.
 on:
   workflow_run:
     workflows: [test]
