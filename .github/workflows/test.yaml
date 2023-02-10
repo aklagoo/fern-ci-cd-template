@@ -9,5 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install
-      - run: npm test
+      - run: npm run install:backend
+      - run: npm run install:frontend
+      - run: npm run test:frontend
+      - run: npm run test:backend
