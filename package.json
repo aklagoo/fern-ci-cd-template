@@ -4,15 +4,15 @@
   "description": "Base template for a FERN + CI/CD application",
   "main": "index.js",
   "scripts": {
-    "dev:backend": "cd backend & npm run dev",
-    "dev:frontend": "cd frontend & npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
     "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
-    "test:backend": "cd backend & npm test",
-    "test:frontend": "cd frontend & npm test",
-    "test:frontend-ci": "cd frontend & npm run test-ci",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test:frontend-ci": "cd frontend && npm run test-ci",
     "test": "concurrently \"npm:test:backend\" \"npm:test:frontend-ci\"",
-    "install:backend": "cd backend & npm install",
-    "install:frontend": "cd frontend & npm install",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
     "postinstall": "concurrently \"npm:install:backend\" \"npm:install:frontend\""
   },
   "repository": {
