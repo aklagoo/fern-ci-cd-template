@@ -15,8 +15,14 @@ jobs:
         with:
           node-version: '14'
       - run: npm run install:frontend
-      - run: npm run deploy:frontend
-  test-frontend:
+      - run: |
+            git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+            git config user.name "Archan Lagoo (GitHub Actions)"
+            git config user.email "aklagoo@gmail.com"
+            npm run deploy:frontend
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  deploy-frontend-failure:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
