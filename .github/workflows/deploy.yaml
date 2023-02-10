@@ -17,8 +17,8 @@ jobs:
       - run: npm run install:frontend
       - run: |
             git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-            git config user.name "Archan Lagoo (GitHub Actions)"
-            git config user.email "aklagoo@gmail.com"
+            git config user.name "github-actions-bot"
+            git config user.email "support+actions@github.com"
             npm run deploy:frontend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
