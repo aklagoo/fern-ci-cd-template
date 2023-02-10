@@ -13,7 +13,8 @@
     "test": "concurrently \"npm:test:backend\" \"npm:test:frontend-ci\"",
     "install:backend": "cd backend && npm install",
     "install:frontend": "cd frontend && npm install",
-    "postinstall": "concurrently \"npm:install:backend\" \"npm:install:frontend\""
+    "postinstall": "concurrently \"npm:install:backend\" \"npm:install:frontend\"",
+    "deploy:frontend": "cd frontend && npm run deploy"
   },
   "repository": {
     "type": "git",
