@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fern-ci-cd-template/static/css/main.a9041707.css",
+    "main.js": "/fern-ci-cd-template/static/js/main.810ab840.js",
+    "static/js/787.cda612ba.chunk.js": "/fern-ci-cd-template/static/js/787.cda612ba.chunk.js",
+    "index.html": "/fern-ci-cd-template/index.html",
+    "main.a9041707.css.map": "/fern-ci-cd-template/static/css/main.a9041707.css.map",
+    "main.810ab840.js.map": "/fern-ci-cd-template/static/js/main.810ab840.js.map",
+    "787.cda612ba.chunk.js.map": "/fern-ci-cd-template/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9041707.css",
+    "static/js/main.810ab840.js"
+  ]
+}
